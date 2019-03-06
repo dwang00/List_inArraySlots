@@ -1,1 +1,2 @@
-# List_inArraySlots
+# A Project Title
+## By David Wang and Jason Zheng
