@@ -1,14 +1,14 @@
 # A Project Title
-## By David Wang and Jason Zheng
+By David Wang and Jason Zheng
 ### Fields
-#### field 1
-#### field 2
-#### field 3
+Field 1
+Field 2
+Field 3
 ### Constructor(s)
-#### constructor 1
-#### constructor 2
+Constructor 1
+Constructor 2
 ### Methods
-#### method 1
-#### method 2
-#### method 3
-##### Comments on the UserOfList class
+Method 1
+Method 2
+Method 3
+####Comments on the UserOfList class
