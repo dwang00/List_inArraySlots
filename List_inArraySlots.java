@@ -19,7 +19,7 @@ public class List_inArraySlots {
       @return the number of elements in this list
      */
     public int size() {
-        return refToArray.length;
+        return filledElements;
     }
 
      /** 
