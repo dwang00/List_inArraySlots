@@ -19,7 +19,7 @@ public class List_inArraySlots {
       @return the number of elements in this list
      */
     public int size() {
-        return refToArray.length;
+        return filledElements;
     }
 
      /** 
@@ -43,6 +43,9 @@ public class List_inArraySlots {
       @return true, in keeping with conventions yet to be discussed
      */
     public boolean add( int value) {
+        if (filledElements == refToArray.length){
+            expand();
+        }
         refToArray[filledElements] = value;
         filledElements++;
         return true;
@@ -53,7 +56,11 @@ public class List_inArraySlots {
       Double the capacity of the List_inArraySlots, 
       preserving existing data
      */
-    //private void expand() {    
-        
-    //}
+    private void expand() {    
+        int [] biggerArray = new int[refToArray.length * 2];
+        for (int index = 0; index < refToArray.length; index ++) {
+            biggerArray[index] = refToArray[index];
+        }
+        refToArray = biggerArray;
+    }
 }
