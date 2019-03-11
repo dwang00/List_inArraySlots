@@ -124,6 +124,12 @@ public class List_inArraySlots {
       // decrease the index associated with each).
       // @return the value that was removed from the list
      // */
-     // public int remove( int index) {
-     // }
+    public int remove( int index) {
+        int removedElement = elements[index];
+         for (int i = index; i < filledElements; i++) {
+            elements[i] = elements[i + 1];
+        }
+        filledElements--;
+        return removedElement;
+    }
 }
